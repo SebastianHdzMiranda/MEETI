@@ -1,0 +1,14 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.footer {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    .footer__texto {
+        margin: 0;
+        font-size: 1.4rem;
+        @include m.desktop {
+            font-size: 1.6rem;
+        }
+    }
+}

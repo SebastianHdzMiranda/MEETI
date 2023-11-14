@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeti</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img src="build/img/logo.png" alt="Logo" class="header__img">
+        </div>
+
+        <nav class="navegacion">
+            <ul class="navegacion__list">
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace navegacion__enlace--grupo">Crear Grupo</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace">Iniciar Sesión</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner__contenido contenedor">
+            <h1 class="banner__titulo">encuentra o crea un grupo para compartir lo que más te gusta</h1>
+
+            <a href="#" class="banner__link">Obtener una cuenta</a>
+        </div>
+    </section>
+    
+    <section class="formSection">
+        <div class="formSection__contenido contenedor">
+
+            <h2 class="formSection__heading">Busca un grupo en tu ciudad</h2>
+    
+            <form class="formulario">
+                
+                <select class="formulario__campo">
+                    <option>Programación</option>
+                    <option>Diseño</option>
+                    <option>Negocios</option>
+                    <option>Moda</option>
+                    <option>Ejercicio y Salud</option>
+                    <option>Fotografía</option>
+                    <option>Comida</option>
+                    <option>Diseño Interior</option>
+                    <option>Café</option>
+                    <option>Cine</option>
+                    <option>Libros</option>
+                    <option>Emprendimiento</option>
+                </select>
+            
+                <input type="text" class="formulario__campo" placeholder="Nombre Evento">
+            
+                <input type="text" class="formulario__campo" placeholder="Ciudad o País">
+
+                <input type="submit" value="Buscar" class="formulario__submit">
+            </form>
+
+        </div>
+    </section>
+
+    <section class="eventos contenedor">
+        <h2 class="eventos__heading">Próximos eventos</h2>
+
+        <div class="eventos__grid">
+            <div class="evento">
+                <img src="build/img/imagen1.jpg" alt="evento3" class="evento__img">
+                
+                <div class="evento__contenido">
+                    <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
+                    <h3 class="evento__nombre">Ideas de Negocios</h3>
+    
+                    <div class="evento__autor">
+                        <div class="evento__autor-imagen">
+                            <img src="build/img/perfil1.webp" alt="perfil1">
+                        </div>
+                        <div class="evento__autor-info">
+                            <p class="evento__organizado-texto">Organizado por:</p>
+                            <p class="evento__organizado-nombre">Sebastian Hernandez</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="evento">
+                <img src="build/img/imagen2.jpg" alt="evento2" class="evento__img">
+                
+                <div class="evento__contenido">
+                    <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
+                    <h3 class="evento__nombre">Ideas de Negocios</h3>
+    
+                    <div class="evento__autor">
+                        <div class="evento__autor-imagen">
+                            <img src="build/img/perfil1.webp" alt="perfil1">
+                        </div>
+                        <div class="evento__autor-info">
+                            <p class="evento__organizado-texto">Organizado por:</p>
+                            <p class="evento__organizado-nombre">Sebastian Hernandez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="evento">
+                <img src="build/img/imagen3.jpg" alt="evento3" class="evento__img">
+                <div class="evento__contenido">
+                    <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
+                    <h3 class="evento__nombre">Ideas de Negocios</h3>
+    
+                    <div class="evento__autor">
+                        <div class="evento__autor-imagen">
+                            <img src="build/img/perfil2.webp" alt="perfil2">
+                        </div>
+                        <div class="evento__autor-info">
+                            <p class="evento__organizado-texto">Organizado por:</p>
+                            <p class="evento__organizado-nombre">Jose Perez</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <main class="categorias">
+        <h2 class="categorias__heading">Categorías</h2>
+
+        <div class="categorias__grid contenedor">
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_1.avif" type="image/avif">
+                    <source srcset="build/img/categoria_1.webp" type="image/webp">
+                    <source srcset="build/img/categoria_1.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_1.jpg" width="500" height="300" alt="categoria_1">
+                </picture>
+                <p class="categorias__nombre">Programación</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_2.avif" type="image/avif">
+                    <source srcset="build/img/categoria_2.webp" type="image/webp">
+                    <source srcset="build/img/categoria_2.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_2.jpg" width="500" height="300" alt="categoria_2">
+                </picture>
+                <p class="categorias__nombre">Diseño UX y UI</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_3.avif" type="image/avif">
+                    <source srcset="build/img/categoria_3.webp" type="image/webp">
+                    <source srcset="build/img/categoria_3.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_3.jpg" width="500" height="300" alt="categoria_3">
+                </picture>
+                <p class="categorias__nombre">Negocios e Ideas</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_4.avif" type="image/avif">
+                    <source srcset="build/img/categoria_4.webp" type="image/webp">
+                    <source srcset="build/img/categoria_4.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_4.jpg" width="500" height="300" alt="categoria_4">
+                </picture>
+                <p class="categorias__nombre">Ropa y Moda</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_5.avif" type="image/avif">
+                    <source srcset="build/img/categoria_5.webp" type="image/webp">
+                    <source srcset="build/img/categoria_5.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_5.jpg" width="500" height="300" alt="categoria_5">
+                </picture>
+                <p class="categorias__nombre">Ejercicio y Bienestar</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_6.avif" type="image/avif">
+                    <source srcset="build/img/categoria_6.webp" type="image/webp">
+                    <source srcset="build/img/categoria_6.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_6.jpg" width="500" height="300" alt="categoria_6">
+                </picture>
+                <p class="categorias__nombre">Fotografía</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_7.avif" type="image/avif">
+                    <source srcset="build/img/categoria_7.webp" type="image/webp">
+                    <source srcset="build/img/categoria_7.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_7.jpg" width="500" height="300" alt="categoria_7">
+                </picture>
+                <p class="categorias__nombre">Comida</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_8.avif" type="image/avif">
+                    <source srcset="build/img/categoria_8.webp" type="image/webp">
+                    <source srcset="build/img/categoria_8.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_8.jpg" width="500" height="300" alt="categoria_8">
+                </picture>
+                <p class="categorias__nombre">Diseño Interior</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_9.avif" type="image/avif">
+                    <source srcset="build/img/categoria_9.webp" type="image/webp">
+                    <source srcset="build/img/categoria_9.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_9.jpg" width="500" height="300" alt="categoria_9">
+                </picture>
+                <p class="categorias__nombre">Café</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_10.avif" type="image/avif">
+                    <source srcset="build/img/categoria_10.webp" type="image/webp">
+                    <source srcset="build/img/categoria_10.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_10.jpg" width="500" height="300" alt="categoria_10">
+                </picture>
+                <p class="categorias__nombre">Cine</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_11.avif" type="image/avif">
+                    <source srcset="build/img/categoria_11.webp" type="image/webp">
+                    <source srcset="build/img/categoria_11.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_11.jpg" width="500" height="300" alt="categoria_11">
+                </picture>
+                <p class="categorias__nombre">Libros</p>
+            </div>
+            <div class="categorias__categoria">
+                <picture>
+                    <source srcset="build/img/categoria_12.avif" type="image/avif">
+                    <source srcset="build/img/categoria_12.webp" type="image/webp">
+                    <source srcset="build/img/categoria_12.jpg" type="image/jpg">
+                    <img class="categorias__imagen" loading="lazy" src="build/img/categoria_12.jpg" width="500" height="300" alt="categoria_12">
+                </picture>
+                <p class="categorias__nombre">Emprendimiento</p>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="grupos">
+        <div class="grupos__contenido contenedor">
+
+            <div class="grupos__grupo">
+                <h3 class="grupos__heading">Crea un Grupo</h3>   
+                <p class="grupos__texto">
+                    Comparte lo que te gusta o tu pasión con los demás, crea tu propio grupo y eventos; hoy mismo sin costos
+                </p> 
+                
+            </div>
+            <div class="grupos__grupo">
+                <h3 class="grupos__heading">Únete a un grupo</h3>   
+                <p class="grupos__texto">
+                    Conoce personas con tus mismos gustos y pasiones, únete a un grupo ya existente y asiste a próximos eventos
+                </p> 
+            </div>
+        </div>
+    </section>
+
+    <section class="navegacionSection contenedor">
+        <nav class="navegacion">
+            <ul class="navegacion__list">
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace navegacion__enlace--grupo">Crear Grupo</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace">Iniciar Sesión</a>
+                </li>
+                <li class="navegacion__item">
+                    <a href="#" class="navegacion__enlace">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <footer class="footer contenedor">
+        <p class="footer__texto">Todos los derechos reservados. Meeti &copy;</p>
+    </footer>
+</body>
+</html>

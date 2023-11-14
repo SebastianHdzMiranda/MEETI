@@ -1,0 +1,55 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.eventos {
+    padding-block: 5rem;
+    &__heading {
+        text-align: center;
+    }
+    &__grid {
+        @include m.grid(1, 2rem);
+        @include m.tablet {
+            @include m.grid(2, 2rem);
+        }
+        @include m.desktop {
+            @include m.grid(3, 2rem);
+        }
+    }
+
+}
+.evento {
+    &__contenido {
+        padding: 2rem;
+        border: 1px solid lighten(v.$gris, 68%);
+        border-top: none;
+    }
+    &__fecha {
+        font-size: 1.4rem;
+        margin: 0 0 1rem 0;
+    }
+    &__nombre {
+        margin-bottom: 2rem;
+        color: v.$gris;
+    }
+    &__autor {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    &__autor-imagen {
+        img {
+            border-radius: 100%;
+            width: 9rem;
+            @include m.tablet {
+                width: 10rem;
+            }
+        }
+    }
+    &__organizado-texto {
+        font-weight: 700;
+        margin: 0 0 .5rem 0;
+    }
+    &__organizado-nombre {
+        margin: 0;
+    }
+}
