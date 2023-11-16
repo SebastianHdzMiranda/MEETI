@@ -11,7 +11,9 @@
 <body>
     <header class="header contenedor">
         <div class="header__logo">
-            <img src="build/img/logo.png" alt="Logo" class="header__img">
+            <a href="index.html">
+                <img src="build/img/logo.png" alt="Logo" class="header__img">
+            </a>
         </div>
 
         <nav class="navegacion">
@@ -37,10 +39,10 @@
         </div>
     </section>
     
-    <section class="formSection">
-        <div class="formSection__contenido contenedor">
+    <section class="busqueda">
+        <div class="busqueda__contenido contenedor">
 
-            <h2 class="formSection__heading">Busca un grupo en tu ciudad</h2>
+            <h2 class="busqueda__heading">Busca un grupo en tu ciudad</h2>
     
             <form class="formulario">
                 
@@ -69,69 +71,108 @@
         </div>
     </section>
 
-    <section class="eventos contenedor">
+    <main class="eventos contenedor">
         <h2 class="eventos__heading">Próximos eventos</h2>
 
         <div class="eventos__grid">
             <div class="evento">
-                <img src="build/img/imagen1.jpg" alt="evento3" class="evento__img">
-                
-                <div class="evento__contenido">
-                    <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
-                    <h3 class="evento__nombre">Ideas de Negocios</h3>
-    
-                    <div class="evento__autor">
-                        <div class="evento__autor-imagen">
-                            <img src="build/img/perfil1.webp" alt="perfil1">
-                        </div>
-                        <div class="evento__autor-info">
-                            <p class="evento__organizado-texto">Organizado por:</p>
-                            <p class="evento__organizado-nombre">Sebastian Hernandez</p>
+                <a href="meeti.html">
+                    <picture>
+                        <source srcset="build/img/imagen1.avif" type="image/avif">
+                        <source srcset="build/img/imagen1.webp" type="image/webp">
+                        <source srcset="build/img/imagen1.jpg" type="image/jpg">
+                        <img  class="evento__img" loading="lazy" src="build/img/imagen1.jpg" width="500" height="300" alt="evento1">
+                    </picture>
+
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
+                        <h3 class="evento__nombre">Ideas de Negocios</h3>
+        
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <picture>
+                                    <source srcset="build/img/perfil1.avif" type="image/avif">
+                                    <source srcset="build/img/perfil1.webp" type="image/webp">
+                                    <source srcset="build/img/perfil1.jpg" type="image/jpg">
+                                    <img loading="lazy" src="build/img/perfil1.jpg" width="500" height="300" alt="perfil1">
+                                </picture>
+                            </div>
+                            <div class="evento__autor-info">
+                                <p class="evento__organizado-texto">Organizado por:</p>
+                                <p class="evento__organizado-nombre">Sebastian Hernandez</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+                
 
             </div>
             <div class="evento">
-                <img src="build/img/imagen2.jpg" alt="evento2" class="evento__img">
-                
-                <div class="evento__contenido">
-                    <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
-                    <h3 class="evento__nombre">Ideas de Negocios</h3>
-    
-                    <div class="evento__autor">
-                        <div class="evento__autor-imagen">
-                            <img src="build/img/perfil1.webp" alt="perfil1">
-                        </div>
-                        <div class="evento__autor-info">
-                            <p class="evento__organizado-texto">Organizado por:</p>
-                            <p class="evento__organizado-nombre">Sebastian Hernandez</p>
+                <a href="meeti.html">
+                    <picture>
+                        <source srcset="build/img/imagen2.avif" type="image/avif">
+                        <source srcset="build/img/imagen2.webp" type="image/webp">
+                        <source srcset="build/img/imagen2.jpg" type="image/jpg">
+                        <img  class="evento__img" loading="lazy" src="build/img/imagen2.jpg" width="500" height="300" alt="evento2">
+                    </picture>
+
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">Lunes 02 de Octubre de 2022</p>
+                        <h3 class="evento__nombre">Bitcoin y otras Criptos</h3>
+        
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <picture>
+                                    <source srcset="build/img/perfil1.avif" type="image/avif">
+                                    <source srcset="build/img/perfil1.webp" type="image/webp">
+                                    <source srcset="build/img/perfil1.jpg" type="image/jpg">
+                                    <img loading="lazy" src="build/img/perfil1.jpg" width="500" height="300" alt="perfil1">
+                                </picture>
+                            </div>
+                            <div class="evento__autor-info">
+                                <p class="evento__organizado-texto">Organizado por:</p>
+                                <p class="evento__organizado-nombre">Sebastian Hernandez</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+                
             </div>
             <div class="evento">
-                <img src="build/img/imagen3.jpg" alt="evento3" class="evento__img">
-                <div class="evento__contenido">
-                    <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
-                    <h3 class="evento__nombre">Ideas de Negocios</h3>
-    
-                    <div class="evento__autor">
-                        <div class="evento__autor-imagen">
-                            <img src="build/img/perfil2.webp" alt="perfil2">
-                        </div>
-                        <div class="evento__autor-info">
-                            <p class="evento__organizado-texto">Organizado por:</p>
-                            <p class="evento__organizado-nombre">Jose Perez</p>
+                <a href="meeti.html">
+                    <picture>
+                        <source srcset="build/img/imagen3.avif" type="image/avif">
+                        <source srcset="build/img/imagen3.webp" type="image/webp">
+                        <source srcset="build/img/imagen3.jpg" type="image/jpg">
+                        <img  class="evento__img" loading="lazy" src="build/img/imagen3.jpg" width="500" height="300" alt="evento3">
+                    </picture>
+
+                    <div class="evento__contenido">
+                        <p class="evento__fecha">Jueves 30 de Septiembre de 2022</p>
+                        <h3 class="evento__nombre">Pizza paso a paso</h3>
+        
+                        <div class="evento__autor">
+                            <div class="evento__autor-imagen">
+                                <picture>
+                                    <source srcset="build/img/perfil2.avif" type="image/avif">
+                                    <source srcset="build/img/perfil2.webp" type="image/webp">
+                                    <source srcset="build/img/perfil2.jpg" type="image/jpg">
+                                    <img loading="lazy" src="build/img/perfil2.jpg" width="500" height="300" alt="perfil2">
+                                </picture>
+                            </div>
+                            <div class="evento__autor-info">
+                                <p class="evento__organizado-texto">Organizado por:</p>
+                                <p class="evento__organizado-nombre">Jose Perez</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
             </div>
         </div>
-    </section>
+    </main>
     
-    <main class="categorias">
+    <section class="categorias"> 
         <h2 class="categorias__heading">Categorías</h2>
 
         <div class="categorias__grid contenedor">
@@ -245,7 +286,7 @@
             </div>
 
         </div>
-    </main>
+    </section>
 
     <section class="grupos">
         <div class="grupos__contenido contenedor">
@@ -266,7 +307,7 @@
         </div>
     </section>
 
-    <section class="navegacionSection contenedor">
+    <footer class="footer contenedor">
         <nav class="navegacion">
             <ul class="navegacion__list">
                 <li class="navegacion__item">
@@ -280,9 +321,6 @@
                 </li>
             </ul>
         </nav>
-    </section>
-
-    <footer class="footer contenedor">
         <p class="footer__texto">Todos los derechos reservados. Meeti &copy;</p>
     </footer>
 </body>

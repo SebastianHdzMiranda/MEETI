@@ -1,7 +1,7 @@
 @use 'bases/variables' as v; 
 @use 'bases/mixins' as m;
 
-.formSection {
+.busqueda {
     background-color: v.$grisClaro;
     padding-block: 5rem;
     &__heading {
@@ -20,8 +20,6 @@
         grid-template-columns: repeat(4, 1fr);
     }
     &__campo {
-        width: 100%;
-        border: none;
         outline: none;
         padding: 1rem;
         border: 1px solid lighten(v.$gris, 50%);

@@ -1,0 +1,17 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.sidebar {
+    &__info {
+        background-color: v.$secundario;
+        color: v.$blanco;
+        text-align: center;
+        padding: 2rem;
+    }
+    &__datos {
+        color: inherit;
+        span {
+            font-weight: 700;
+        }
+    }
+}

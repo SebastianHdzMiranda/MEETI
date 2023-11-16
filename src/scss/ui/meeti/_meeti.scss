@@ -1,0 +1,17 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.meeti {
+    &__heading {
+        text-align: center;
+        color: v.$gris;
+        margin-bottom: 5rem;
+    }
+    &__grid {
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+    }
+}
